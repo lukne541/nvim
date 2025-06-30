@@ -1211,8 +1211,7 @@ function! s:update_impl(pull, force, args) abort
   silent! redraw
 
   " Set remote name, overriding a possible user git config's clone.defaultRemoteName
-"  let s:clone_opt = ['--origin', 'origin']
-  let s:clone_opt = ['']
+  let s:clone_opt = ['--origin', 'origin']
   if get(g:, 'plug_shallow', 1)
     call extend(s:clone_opt, ['--depth', '1'])
     if s:git_version_requirement(1, 7, 10)
