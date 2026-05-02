@@ -1,0 +1,14 @@
+{
+  "suggest.autoTrigger": "trigger",
+  "languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [".ccls-ignore", "compile_commands.json", ".git/"],
+			"initializationOptions": {
+			  "index": { "initialBlacklist": ["."] }
+			}
+		}
+	},
+    "coc.preferences.formatOnSave": true
+}
